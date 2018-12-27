@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">android_contacts</string>
+    <string name="search">搜索</string>
+    <string name="add">添加</string>
+    <string name="getAddress">地址</string>
+    <string name="getEmail">邮箱</string>
+    <string name="getPhone">手机</string>
+    <string name="edit_contact">编辑联系人</string>
+    <string name="delTheContact">删除联系人</string>
+    <string name="contact_user">联系人</string>
+    <string name="hint">提示</string>
+    <string name="del_contact">确定删除此联系人</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="addContact">添加联系人</string>
+    <string name="add_head">头像</string>
+    <string name="name">姓名</string>
+    <string name="edit_name">请在此输入姓名</string>
+    <string name="telphone">手机</string>
+    <string name="edit_telphone">请在此输入手机号码</string>
+    <string name="email">邮箱</string>
+    <string name="edit_email">请在此输入电子邮箱</string>
+    <string name="address">地址</string>
+    <string name="edit_address">请在此输入地址</string>
+    <string name="nameOrTelnumNotNull">姓名和手机号码不能为空</string>
+    <string name="setHead">设置头像</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/setting_search_bg"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.example.admin.android_contacts.view.SearchView
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/text_field"
+            android:drawableLeft="@mipmap/search"
+            android:drawableStart="@mipmap/search"
+            android:hint="@string/search"
+            android:paddingEnd="40dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="40dp"
+            android:paddingStart="4dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@mipmap/icon_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/add"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#000000"
+                android:divider="#e3e3e3"
+                android:dividerHeight="1.0dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false">
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dp"
+            android:visibility="invisible" />
+
+        <com.example.admin.android_contacts.view.SliderView
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
